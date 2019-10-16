@@ -1,0 +1,12 @@
+i.icon{
+	font-size: 2em;/* double the size of the parent element*/
+}
+.container.main {
+    margin-top: 7.0em;/*add some margin to the container with class main to move the "new blog" down*/
+}
+#delete{
+	display: inline;
+}
+footer p{
+	text-align : center;
+}

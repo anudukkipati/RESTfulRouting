@@ -1,0 +1,17 @@
+<% include ./partials/header %>
+<h2>
+	INDEX PAGE!!
+</h2>
+<!-- to display the blog a little nicer add a forEach function, don't forget ejs brackets but no = sign-->
+
+<% books.forEach(function(book){ %>
+	<div>
+		<h2><%= book.title %></h2>
+		<img src="<%= book.image %>">
+		<p><%- book.body.substring(0, 100) %>...</p>
+		<span><%=book.created.toDateString() %></span>
+		<a href="/books/<%= book._id %>">Read More</a>
+    </div>
+<% }) %>
+
+<% include ./partials/footer %>
